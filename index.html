@@ -6,31 +6,43 @@
         <title>Encriptador One</title>
         <link rel="stylesheet" href="css/style.css">
         <link rel="js" href="js/index.js">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
     </head>
     <body>
-        <div class="container">
-            <h1>Encriptador</h1>
-            <form action="encriptar.php" method="POST">
-                <label for="text">Texto a encriptar</label>
-                <textarea name="text" id="encriptador" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
-                <input type="submit" value="Encriptar">
-            </form>
-            
-            <div class="botones">
-                <button class= "boton-encriptar" onclick="encriptar()">Encriptar</button>
-                <button class="boton-desencriptar" onclick="desencriptar()"> Desencriptar </button>
-            </div>
-            
-        </div>
+        <header>
+            <img class="logo" src="imagenes/Vector.png" alt="logotipo"> 
+        </header>
 
-        <div class="container-2">
-            <div class = "muneco">
-                <image src="muneco.png" alt="'Girl with magnifying glass"></image>
-            </div>
-        </div>
+        <main>
+            <!-- <h1>Encriptador</h1> -->
+            <section>
 
-    </body>
-    <script src="js/index.js">
+                <textarea class="text-area" name="text" id="encriptador" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
+
+                <div>
+                    <h6 class="informacion">Solo letras minusculas y sin acentos</h6>
+                </div>
+    
+                <div class="botones">
+                    <button class= "boton-encriptar" onclick="encriptar()">Encriptar</button>
+                    <button class="boton-desencriptar" onclick="desencriptar()"> Desencriptar </button>
+                </div>
+
+            </section>
+
+            <section>
+                <textarea class="mensaje" name="text" cols="30" rows="10" > </textarea>
+                <div>
+                    <button class="boton-copiar">Copiar</button>
+                </div>
+            </section>
+            
+        </main>
         
-    </script>
+        <script src="js/index.js"></script>
+    
+    </body>
+    
 </html>
