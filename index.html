@@ -5,7 +5,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Encriptador One</title>
         <link rel="stylesheet" href="css/style.css">
-        <link rel="js" href="js/index.js">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
@@ -19,23 +18,24 @@
             <!-- <h1>Encriptador</h1> -->
             <section>
 
-                <textarea class="text-area" name="text" id="encriptador" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
+                <textarea class="text-area" name="text" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
 
                 <div>
                     <h6 class="informacion">Solo letras minusculas y sin acentos</h6>
                 </div>
     
                 <div class="botones">
-                    <button class= "boton-encriptar" onclick="encriptar()">Encriptar</button>
-                    <button class="boton-desencriptar" onclick="desencriptar()"> Desencriptar </button>
+                    <button class= "boton-encriptar" onclick="btnEncriptar()">Encriptar</button>
+                    <button class="boton-desencriptar" onclick="btnDesencriptar()">Desencriptar </button>
                 </div>
 
             </section>
 
             <section>
-                <textarea class="mensaje" name="text" cols="30" rows="10" > </textarea>
+                <textarea class="mensaje" name="text" cols="20" rows="10" > </textarea>
                 <div>
-                    <button class="boton-copiar">Copiar</button>
+                    <button class="boton-copiar" onclick="copiar()">Copiar</button>
+
                 </div>
             </section>
             
